@@ -52,6 +52,7 @@ export const ModeloEditado: React.FC = () => {
       ed={ed}
       modos={MODOS}
       manterMaiusculas={['MOTION', 'IA']}
+      // trilha="<slug>"  // trilha de fundo do acervo (public/trilhas/CATALOGO.md); todo reels editado leva uma
       painel={
         <>
           <Sequence from={0} durationInFrames={fr(s(1).start)}><Gancho /></Sequence>

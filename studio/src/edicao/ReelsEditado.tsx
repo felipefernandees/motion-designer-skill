@@ -3,6 +3,7 @@ import {BrandingProvider, useBranding} from '../ds/contexto';
 import {BRANDINGS, type NomeBranding} from '../ds/brandings';
 import {AreaProvider} from '../ds/formatos';
 import {SomProvider} from '../ds/som';
+import {Trilha} from '../ds/trilha';
 import {Camera} from './Camera';
 import {agruparLegendas} from './agrupar';
 import {Legendas} from './Legendas';
@@ -31,12 +32,14 @@ export type PropsReelsEditado = {
   modos: ModoFala[]; // altura da legenda por fala
   branding?: NomeBranding;
   som?: boolean;
+  trilha?: string; // slug em public/trilhas/ (CATALOGO.md). Todo reels editado leva uma, bem baixa.
+  trilhaInicio?: number; // segundo da música onde começa
   manterMaiusculas?: string[];
   painel: React.ReactNode; // cenas do topo
   telaCheia?: React.ReactNode; // cenas de tela cheia (cada uma dentro de <Sequence>)
 };
 
-export const ReelsEditado: React.FC<PropsReelsEditado> = ({bruto, ed, modos, branding = 'apple', som = true, manterMaiusculas, painel, telaCheia}) => {
+export const ReelsEditado: React.FC<PropsReelsEditado> = ({bruto, ed, modos, branding = 'apple', som = true, trilha, trilhaInicio, manterMaiusculas, painel, telaCheia}) => {
   const b = BRANDINGS[branding];
   const grupos = agruparLegendas(ed, modos, 3, manterMaiusculas);
   const claro = b.cor.fundo.toUpperCase() > '#888888';
@@ -44,6 +47,7 @@ export const ReelsEditado: React.FC<PropsReelsEditado> = ({bruto, ed, modos, bra
     <BrandingProvider branding={b}>
       <SomProvider ligado={som}>
         <AbsoluteFill style={{background: '#0E0E0F'}}>
+          {trilha ? <Trilha nome={trilha} inicio={trilhaInicio} /> : null}
           <Camera bruto={bruto} ed={ed} deslocY={DESLOC_CAMERA} />
           <Painel topo={TOPO_EDITADO}>{painel}</Painel>
           <AreaProvider value={{largura: 1080, altura: 1920}}>{telaCheia}</AreaProvider>

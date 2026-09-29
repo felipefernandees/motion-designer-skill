@@ -35,7 +35,7 @@ Edição de reels e motion design em código (Remotion), com linguagem de movime
 1. **Briefing curto** (só o que faltar e não estiver no `perfil.md`): destino (reels, YouTube, publi), modo (editado inteiro ou overlay), referência (se houver), branding, som.
    Sem referência, pergunte também: qual a ação principal de cada trecho, que telas/apps aparecem (o que citar precisa aparecer de verdade), tom (sério, divertido, técnico).
 2. **Transcrever** (overlay) ou **mapear takes** (editado). Sem vídeo (só roteiro): estimar ~2,6 palavras/s e avisar que o tempo final vem do vídeo.
-3. **Script de motion (PORTÃO, obrigatório):** tabela `| tempo | fala | modo (topo/cheio) | ação herói | peça |` + 1 linha com branding, som e duração. Esperar o OK. Referência de motion: analisar a gramática (ver `retroalimentacao.md`) e dizer o que vai copiar dela.
+3. **Script de motion (PORTÃO, obrigatório):** tabela `| tempo | fala | modo (topo/cheio) | ação herói | peça |` + 1 linha com branding, som, **trilha** (slug do acervo, `referencias/som.md`) e duração. Esperar o OK. Referência de motion: analisar a gramática (ver `retroalimentacao.md`) e dizer o que vai copiar dela.
 4. **Construir:** reaproveitar acervo e primitivas antes de criar; peça nova nasce genérica em `studio/src/primitivas/`.
 5. **Conferir:** `motor/folha.sh <Id> <saida.png> <frames...>` e OLHAR a folha contra o **checklist "cara de premium"** (fim da doutrina) + área segura + nada sobreposto. Corrigir antes de mostrar.
 6. **Renderizar** só com OK: `motor/render.sh <Id> <saida>`.
@@ -51,6 +51,7 @@ Protocolo completo em `COLABORACAO.md` (raiz do repositório). Resumo:
 - Script antes de gerar, sempre. Nada de render sem OK.
 - Checklist "cara de premium" conferido na folha ANTES de mostrar.
 - **Interface real e fiel** em vez de símbolo; **toda ferramenta citada com a logo oficial**; mascote do Claude (Clawd) **só no gancho**, junto da logo.
+- **Trilha de fundo em todo reels editado**, bem baixa (acervo pessoal em `studio/public/trilhas/`, ver `som.md`).
 - **Som só de interface** (banco `ui-*`), baixo. Laser, whoosh, impacto e riser ficam mudos.
 - **Área segura do Reels:** nada a menos de ~90px das laterais nem colado no topo, zoom incluído.
 - Legenda do modo editado: estilo do `perfil.md` (padrão: Geist 600, minúscula, branca, sem caixa, 2-3 palavras, altura variável, escura em fundo claro). No overlay, a legenda é do editor do criador.

@@ -1,6 +1,6 @@
 import {Series} from 'remotion';
 import {BrandingProvider} from '../../../ds/contexto';
-import {mundi} from '../../../ds/brandings/mundi';
+import {mundi} from './branding';
 import {SomProvider} from '../../../ds/som';
 import {CenaTexto} from '../../../primitivas/CenaTexto';
 import {Marca} from '../../../primitivas/Marca';

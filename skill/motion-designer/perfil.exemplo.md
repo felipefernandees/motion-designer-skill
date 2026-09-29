@@ -16,7 +16,7 @@
 - Modo padrão: editado inteiro · Formato: reels 9:16
 - Branding: `apple` (claro) · Destaque: cor da marca do assunto
 - Legenda: padrão da skill (Geist 600, minúscula, branca, sem caixa, 2-3 palavras)
-- SFX de interface: sim · Trilha: eu ponho depois
+- SFX de interface: sim · Trilha: a skill põe (acervo pessoal em `studio/public/trilhas/`, ver `referencias/som.md`)
 - Mascote: Clawd só no gancho quando o assunto é Claude
 
 ## Regras minhas

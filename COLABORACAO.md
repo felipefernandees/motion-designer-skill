@@ -36,7 +36,7 @@ O que a skill faz:
 - **Trilha sonora e mixagem:** a lógica vai em `studio/src/ds/` (ex.: volume da trilha por baixo da voz, ducking) + regra em `referencias/som.md`. **Arquivos de música não vão pro Git** (licença): mande a lista com link e licença, e cada um baixa.
 - **Primitiva nova** (ex.: tela do GitHub com estrelas animadas): `studio/src/primitivas/<Nome>.tsx` genérica + linha na tabela do `CLAUDE.md`.
 - **Regra de qualidade** ("isso ficou genérico por causa X"): parágrafo em `doutrina-movimento.md` > Regras aprendidas.
-- **Branding novo:** arquivo em `studio/src/ds/brandings/` (sem logo nem fonte licenciada de marca real).
+- **Branding novo:** é pessoal, fica em `studio/src/ds/brandings/pessoais/` (fora do Git). Só vai PR se for mudança no neutro `geral.ts` ou no mecanismo.
 
 ## Versões
 `CHANGELOG.md` registra cada merge em uma linha (data · autor · o que mudou). O `main` é sempre a versão estável.

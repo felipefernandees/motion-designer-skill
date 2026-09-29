@@ -17,11 +17,11 @@ Rode UMA vez, quando `perfil.md` não existir (ou quando o criador pedir "refaz 
 ## 3. Como você quer o vídeo
 - Modo padrão: editado inteiro (a skill entrega o .mp4 pronto) ou overlay (só o motion pra você juntar no seu editor)?
 - Formato: reels 9:16, YouTube 16:9, os dois.
-- Branding: tema claro Apple (padrão), escuro, ou seu branding (cores + fonte livre).
+- Branding: tema claro Apple (padrão) ou seu branding (cores + fonte livre), criado em `studio/src/ds/brandings/pessoais/` (fica só na sua máquina).
 - Cor de destaque padrão (ou "a da marca do assunto de cada vídeo", que é o padrão).
 - Legenda: estilo padrão (minúscula, branca, sem caixa, 2-3 palavras, altura variável) ou o seu (fonte, caixa, cor, posição). Quem põe a legenda: a skill ou você no editor?
 - Efeitos sonoros de interface: sim (padrão, baixinhos) / não.
-- Trilha sonora: você põe depois / quer que a skill ponha (quando disponível).
+- Trilha sonora: quer que a skill ponha? Se sim, mande as músicas e rode `motor/trilha.sh` em cada uma (acervo pessoal, fora do Git).
 - Mascote/personagem: usa o Clawd no gancho quando falar de Claude? Tem mascote próprio?
 
 ## 4. Regras suas

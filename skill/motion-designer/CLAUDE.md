@@ -5,15 +5,16 @@
 |---|---|
 | Motor (código, node_modules) | `studio/` na raiz do repositório (ou o caminho em `MOTION_STUDIO`) |
 | Linguagem de movimento (molas, easing, tracking) | `studio/src/ds/movimento.ts` |
-| Brandings + qual é o padrão | `studio/src/ds/brandings/` (`index.ts`; o padrão de cada criador fica no `perfil.md`) |
+| Brandings + qual é o padrão | `studio/src/ds/brandings/`: só o neutro `apple` vai pro Git; os do criador em `pessoais/<nome>.ts` (fora do Git, carregados sozinhos); o padrão fica no `perfil.md` |
 | Formatos e área de desenho | `studio/src/ds/formatos.ts` |
 | Som (liga/desliga, banco) | `src/ds/som.tsx`: banco aprovado `ui-*` em `public/sfx/ui/`; os `.wav` sintetizados antigos foram reprovados e são redirecionados/mudos |
+| Trilhas de fundo (pessoal, fora do Git) | `public/trilhas/<slug>.mp3` + `CATALOGO.md`; componente `src/ds/trilha.tsx`; entrar com `motor/trilha.sh`, mixar vídeo pronto com `motor/mixar-trilha.sh` |
 | Peças reaproveitáveis | `src/primitivas/` |
 | Motions feitos (código) | `src/acervo/<topico>/<slug>/` |
 | Modelo pra copiar | `src/acervo/_modelos/modelo-reels/` |
 | Motions feitos (vídeo + ficha) | pasta de acervo definida no `perfil.md` (+ catálogo) |
 | Logos de apps e IAs (950) | `public/logos/*.svg` |
-| Scripts | `motor/` desta skill (`takes.sh`, `preparar.py`, `transcrever.sh`, `folha.sh`, `render.sh`) |
+| Scripts | `motor/` desta skill (`takes.sh`, `preparar.py`, `transcrever.sh`, `folha.sh`, `render.sh`, `trilha.sh`, `mixar-trilha.sh`) |
 | Edição de bruto (modo editado) | `src/edicao/` (`ReelsEditado`, `Camera`, `Legendas`, `TelaCheia`, `agrupar.ts`, `tipos.ts`) |
 | Brutos (proxy) e edições | `public/brutos/<id>.mp4`, `public/edicoes/<id>.json` |
 | Sons aprovados | `public/sfx/ui/` (Mixkit + HyperFrames, licença em `LICENCA-mixkit.txt`) |

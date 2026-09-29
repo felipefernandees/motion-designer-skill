@@ -9,6 +9,11 @@ studio/public/edicoes/
 studio/trabalho/
 studio/out/
 studio/src/acervo/pessoal/
+# trilhas sonoras: música com direito autoral, cada criador monta o próprio acervo (motor/trilha.sh)
+studio/public/trilhas/
+# brandings: identidade visual é pessoal de cada criador (só o LEIA.md vai pro Git)
+studio/src/ds/brandings/pessoais/*
+!studio/src/ds/brandings/pessoais/LEIA.md
 *.mp4
 *.mov
 *.wav
