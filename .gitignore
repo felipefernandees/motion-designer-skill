@@ -1,0 +1,23 @@
+# ---------- PESSOAL: nunca vai pro Git ----------
+# preferências, histórico e retomada de cada criador (ficam só na máquina dele)
+skill/motion-designer/MEMORY.md
+skill/motion-designer/HANDOFF.md
+skill/motion-designer/perfil.md
+# brutos, edições, renders e trabalho em andamento (têm o rosto/voz do criador)
+studio/public/brutos/
+studio/public/edicoes/
+studio/trabalho/
+studio/out/
+studio/src/acervo/pessoal/
+*.mp4
+*.mov
+*.wav
+*.MP4
+# ---------- GERADO pelo instalar.sh (licenças de terceiros, baixa na máquina de cada um) ----------
+studio/public/logos/
+studio/public/sfx/
+# ---------- ferramentas ----------
+node_modules/
+.DS_Store
+*.log
+.env*
