@@ -24,7 +24,7 @@ Node 20 ou mais novo. [Claude Code](https://claude.com/claude-code) instalado.
 
 ### 2. Clonar e instalar
 ```bash
-git clone https://github.com/<dono>/motion-designer-skill.git
+git clone https://github.com/felipefernandees/motion-designer-skill.git
 cd motion-designer-skill
 ./instalar.sh
 ```
