@@ -38,10 +38,11 @@ O `instalar.sh`:
 Pra ligar só dentro de um projeto (um "segundo cérebro", por exemplo), rode `./instalar.sh --sem-link` e crie um link manual para `skill/motion-designer` dentro de `.claude/skills/` do projeto.
 
 ### 3. Testar sem gravar nada
+O `instalar.sh` já gera uma demo: um bruto de teste com a voz do Mac, com 1 take errado de propósito, e a edição dele.
 ```bash
-bash skill/motion-designer/motor/demo.sh      # gera um bruto de teste com a voz do Mac (com 1 take errado de propósito)
-cd studio && npm run studio                   # abre o estúdio → composição "ModeloEditado"
+cd studio && npm run studio      # abre o estúdio → composição "ModeloEditado"
 ```
+Pra gerar a demo de novo: `bash skill/motion-designer/motor/demo.sh`.
 Você deve ver:
 - o gancho com a logo do Claude e o mascote;
 - frases entrando palavra por palavra;
